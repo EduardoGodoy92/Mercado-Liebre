@@ -4,8 +4,9 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-
-    
+app.listen(3000, () => {
+    console.log('servidor corriendo en el puerto 3000')
+});
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('./views/home.html'))
@@ -19,6 +20,3 @@ app.get('/register', (req, res) => {
     res.sendFile(path.resolve('./views/register.html'))
 });
 
-app.listen(process.env.PORT || 3000,()=>{ // SI EN CONSOLA TIRA  LO DEL CONSOLE.LOG, VA TODO PERFECTO
-    console.log("Servidor corriendo en host 3000")
-});
