@@ -1,0 +1,887 @@
+/* MOBILE FIRST */
+
+/* ---------- styles all ----------- */
+
+:root {
+
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Grisoscuro: #666;
+    --Grisclaro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+
+}
+
+/* ---------- styles header ----------- */
+
+header {
+
+    background-color: var(--Amarillo);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+
+}
+
+.main-header {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.barradebusqueda {
+
+    width: 75%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 10px;
+    border: 1px solid white;
+
+}
+
+header section div form {
+
+    padding-left: 0px;
+    margin-right: 9px;
+
+}
+
+.buscador {
+
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 10%;
+    height: 40px;
+    width: 50%;
+
+}
+
+button {
+
+    height: 40px;
+    margin-top: 10px;
+    font-size: 10px;
+    border: 1px solid white;
+    color: gray;
+    background-color: white;
+    width: 25px;
+    position: absolute;
+
+}
+
+
+.logo {
+
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+nav {
+
+    display: none;
+
+}
+
+header div {
+
+    text-align: center;
+
+}
+
+.menu {
+
+    color: var(--Grisclaro);
+    background-color: var(--Celeste);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.textoheader {
+
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+
+
+ul {
+
+    list-style: none;
+    font-size: 12px;
+    text-align: left;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.banner {
+
+    width: 100%;
+    margin-top: 165px;
+
+}
+
+/* ---------- styles main ----------- */
+
+.titulares {
+
+    color: var(--Grisoscuro);
+    text-align: center;
+    font-size: 24px;
+
+}
+
+img {
+
+    width: 100%;
+
+}
+
+p {
+
+    font-size: 12px;
+
+}
+
+main {
+
+    margin: 5%;
+    width: 90%;
+
+}
+
+article {
+
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+
+.division {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border-top: 1px solid var(--Grisclaro);
+    padding: 15px;
+    margin-top: 0px;
+    position: relative;
+
+}
+
+main section article i {
+
+    color: var(--Verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: static;
+    transition: rotate(270deg);
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    z-index: 1;
+
+}
+
+.precios {
+
+    width: 30%;
+    font-size: 18px;
+
+}
+
+.descuentos {
+
+    width: 70%;
+    font-size: 16px;
+    color: var(--Verde);
+
+}
+
+.descripciones {
+
+    color: var(--Grisoscuro);
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+    font-weight: bold;
+    transition: all 500ms;
+
+}
+
+/* ---------- styles footer ----------- */
+
+footer {
+
+    position: relative;
+    bottom: 0;
+    background-color: white;
+    text-align: center;
+    color: var(--Grisoscuro);
+
+}
+
+.iconosfooter {
+
+    color: var(--Celeste);
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.piedepagina {
+
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.footer-article {
+
+    width: 100%;
+
+}
+
+/* ---------- styles forms ----------- */
+
+.header-form {
+
+    background-color: var(--Amarillo);
+    position: static;
+
+}
+
+.form-main {
+
+    width: 100%;
+    margin: 0;
+
+}
+
+.formUsuario {
+
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.inputReg {
+
+    height: 35px;
+    margin-top: 10px;
+    font-size: 10px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 5px;
+    background-color: #ebebeb;
+    font-size: 15px;
+
+}
+
+.labelReg {
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black
+}
+
+.labelImage {
+
+    height: auto;
+    color: black;
+
+}
+
+.inputImage {
+
+    height: auto;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    color: black;
+    font-size: 15px;
+
+}
+
+.buttonReg {
+
+    font-size: 16px;
+    color: white;
+    background-color: var(--Celeste);
+    width: 60%;
+    align-self: center;
+    margin-top: 20px;
+    border: 1px solid #1259c3;
+    position: static;
+    transition: all 450ms;
+    border-radius: 4px-;
+
+}
+
+.radio {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.labelPerfil {
+
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+
+.checkbox {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5%;
+
+}
+
+.inputDate {
+
+    height: 40px;
+    border-radius: 4px;
+    color: black;
+    margin-bottom: 5px;
+
+}
+
+.labelInpu {
+
+    margin: 5px;
+
+
+}
+
+.labelRadio {
+
+    margin-left: 10px;
+
+}
+
+/* VISTA TABLET */
+
+@media(min-width:480px) {
+
+    /* ------- styles de forms ------ */
+
+    .checkbox {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+
+    }
+
+    .labelInpu {
+
+        margin: 0;
+
+    }
+
+    /* ------- styles de header,main y footer ------ */
+
+    .banner {
+
+        margin-top: 100px;
+
+    }
+
+    .main-login {
+
+        width: 90%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+
+    }
+
+    .main-header {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logo {
+
+        width: 33%;
+
+    }
+
+    .buscador {
+
+        width: 33%;
+        font-size: 10px;
+
+    }
+
+    .textoheader {
+
+        width: 33%;
+
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+    }
+
+    nav ul {
+
+        display: flex;
+
+    }
+
+    li {
+
+        margin: 4px;
+
+    }
+
+    main section {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .menu {
+
+        display: none;
+
+    }
+
+    article {
+
+        width: 47%;
+        box-sizing: border-box;
+
+    }
+
+    .precios {
+
+        width: 30%;
+        font-size: 18px;
+        flex-grow: 1;
+
+    }
+
+    .descuentos {
+
+        padding-left: 20px;
+        width: 70%;
+        font-size: 16px;
+        color: var(--Verde);
+        flex-grow: 1;
+
+    }
+
+    main section article {
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    footer {
+
+        background-color: white;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0Px;
+        text-align: center;
+        color: var(--Grisoscuro)
+    }
+
+}
+
+/* VISTA COMPUTADORA */
+
+@media(min-width:769px) {
+
+    /* ----- Transiciones y animaciones ------- */
+
+    header nav ul li a{
+
+        transition: all 200ms;
+        
+    }
+    
+    header nav ul li a:hover{
+
+        font-weight: bold;
+    } 
+
+    main .iconosfooter {
+
+        transition: all 450ms;
+
+    }
+
+    .iconosfooter:hover {
+
+        color: var(--Verde)
+    }
+
+    main section article .descripciones {
+
+        display: block;
+        visibility: hidden;
+
+    }
+
+    main section article:hover .descripciones {
+
+        visibility: visible;
+        transition: all 500ms;
+
+    }
+
+    main section article:hover {
+
+        box-shadow: 0px 0px 20px rgb(7, 7, 7);
+        transition: all 450ms;
+
+    }
+
+    main section article:hover i {
+
+        transform: rotate(-90deg);
+        transition: 1000ms;
+
+    }
+
+    .buttonReg {
+
+        transition: all 450ms;
+
+    }
+
+    .buttonReg:hover {
+
+        background-color: #0022AA;
+
+    }
+
+    /* ------- styles de forms ------ */
+
+    .checkbox {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+
+    }
+
+    .labelInpu {
+
+        margin: 0;
+
+    }
+
+    .banner {
+
+        margin-top: 90px;
+
+    }
+
+    .formUsuario {
+
+        width: 50%;
+        margin-left: 25%;
+
+    }
+
+    /* ------- estilos header, main y footer ------ */
+
+    .main-header {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .logo {
+
+        width: 25%;
+
+    }
+
+    .division {
+
+        position: relative;
+
+    }
+
+    .buscador {
+
+        width: 40%;
+        font-size: 18px;
+
+    }
+
+    .input {
+
+        height: 40px;
+        margin-top: 10px;
+        font-size: 10px;
+        border-radius: 4px;
+        border: 1px solid white;
+        width: 70%;
+
+    }
+
+    .barradebusqueda {
+
+        width: 70%;
+
+    }
+
+    .textoheader {
+
+        width: 33%;
+        font-size: 12px;
+
+    }
+
+    nav {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    nav ul {
+
+        display: flex;
+
+    }
+
+    li {
+
+        margin: 0 15px;
+
+    }
+
+    .menu {
+
+        display: none;
+
+    }
+
+    main section {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    article {
+
+        width: 24%;
+        box-sizing: border-box;
+
+    }
+
+    main section article {
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+
+    .descuentos {
+
+        width: 45%;
+
+    }
+
+    footer section {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .footer-article {
+
+        width: 33%;
+        box-sizing: border-box;
+
+    }
+
+    footer {
+
+        background-color: white;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0Px;
+        text-align: center;
+        color: var(--Grisoscuro)
+    }
+
+}
+
+/* --------- Resolucion 1024px ---------- */
+
+@media(min-width:1024px) {
+
+    .banner {
+
+        margin-top: 100px;
+
+    }
+
+    .division {
+
+        position: relative;
+
+    }
+
+    .main-login {
+
+        width: 90%;
+
+    }
+
+    a {
+
+        font-size: 15px;
+
+    }
+
+    .textoheader {
+
+        width: 35%;
+        font-size: 18px;
+
+    }
+
+    .formUsuario {
+
+        width: 30%;
+        margin-left: 35%;
+
+    }
+
+    .checkbox {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+
+    }
+
+    .labelInpu {
+
+        margin: 0;
+
+    }
+
+    .buttonReg {
+
+        width: 40%;
+
+    }
+
+    footer {
+
+        background-color: white;
+        margin: 0px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0Px;
+        text-align: center;
+        color: var(--Grisoscuro)
+    }
+
+    footer section article h4 {
+
+        font-size: 20px;
+
+    }
+
+    footer section article h4 {
+
+        font-size: 20px;
+
+    }
+
+    footer section article p {
+
+        font-size: 18px;
+
+    }
+
+}
